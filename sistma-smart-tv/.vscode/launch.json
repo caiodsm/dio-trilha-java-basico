@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AboutMe2",
+            "request": "launch",
+            "mainClass": "AboutMe2",
+            "projectName": "sistma-smart-tv_25dcef52"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Usuario",
+            "request": "launch",
+            "mainClass": "Usuario",
+            "projectName": "sistma-smart-tv_25dcef52"
+        },
+        {
+            "type": "java",
+            "request": "launch",
+            "mainClass": "AboutMe",
+            "args": [
+                "Caio",
+                "Miranda",
+                "32",
+                "1.78"
+            ]
+        }
+    ]
+}
