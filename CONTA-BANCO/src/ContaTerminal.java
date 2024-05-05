@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -7,8 +8,29 @@ public class ContaTerminal {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         //Exibir as mensages para o nosso usuário
-        System.out.println("Por favor, digite o seu número !");
-        int contaUsuario = scanner.nextInt();
+        // System.out.println("Por favor, digite o seu número !");
+        //int contaUsuario = scanner.nextInt();
+        int contaUsuario;
+
+        while (true) {
+            try {
+
+                System.out.println("Por favor, digite o seu número !");
+
+                contaUsuario = scanner.nextInt();
+
+                break;
+
+            } catch (InputMismatchException e) {
+
+                System.out.println("Entrada inválida. Digite somente número!");
+
+                scanner.nextLine(); // Descartar a entrada inválida
+
+            }
+
+        }
+        
         
         System.out.println("Por favor, digite o número da Agência !");
         String agenciausuario = scanner.next();
